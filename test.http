@@ -1,0 +1,22 @@
+POST http://localhost:7071/api/LoginFunction
+Content-Type: application/json
+
+{
+    "emailID": "customer1@cloudthat.com",
+    "password": "cust@1234",
+    "usertype": "c"
+}
+
+
+###
+POST http://localhost:7071/api/LoginFunction
+Content-Type: application/json
+
+{
+    "emailID": "Rebok@quickcart.com",
+    "password": "Kmail@1234",
+    "usertype": "v"
+}
+
+###
+GET http://localhost:7071/api/dboProduct
