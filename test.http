@@ -20,3 +20,86 @@ Content-Type: application/json
 
 ###
 GET http://localhost:7071/api/dboProduct
+
+
+###
+POST http://localhost:7072/api/PaymentService HTTP/1.1
+Content-Type: application/json
+
+{
+    "cardNumber":1235,
+    "CVV":452,
+    "Expiry":12457,
+    "ProdCost":4452,
+    "ProdID":22,
+    "CustEmail": "customer1@cloudthat.com"
+}
+
+// After Network Block on Specific IP
+// LoginFunction API Direct Url
+###
+POST https://loginfunctionapp34x.azurewebsites.net/api/LoginFunction?code=7qROCzeE88PGnHtwe81PUP4rdhYettT1BuBo3hHk/LpzPkfEwXyKHA==
+Content-Type: application/json
+
+{
+    "emailID": "Rebok@quickcart.com",
+    "password": "Kmail@1234",
+    "usertype": "v"
+}
+
+
+//LoginFunction API APIM Url
+
+###
+POST https://qkapim34x.azure-api.net/api/PaymentService
+Content-Type: application/json
+
+{
+    "emailID": "Rebok@quickcart.com",
+    "password": "Kmail@1234",
+    "usertype": "v"
+}
+
+
+
+// Payment Function Direct Url
+###
+POST https://orderprocessfunc34x.azurewebsites.net/api/PaymentService?code=EUcnbpqgkG8Bv_g76FRpsH-KqH3Z_WPvIeIXMsTpIT_zAzFuYHeGug==
+Content-Type: application/json
+
+{
+    "cardNumber":1235,
+    "CVV":452,
+    "Expiry":12457,
+    "ProdCost":4452,
+    "ProdID":77,
+    "CustEmail": "customer1@cloudthat.com"
+}
+
+
+
+// Payment Function APIM Url
+###
+POST https://qkapim34x.azure-api.net/api/PaymentService
+Content-Type: application/json
+
+{
+    "cardNumber":1235,
+    "CVV":452,
+    "Expiry":12457,
+    "ProdCost":4452,
+    "ProdID":77,
+    "CustEmail": "customer1@cloudthat.com"
+}
+
+
+// BackEnd-QK Get Product List Direct Url
+###
+GET https://qk-prod.azurewebsites.net/api/home/getproducts
+
+
+
+// BackEnd-QK Get Product List APIM Url
+###
+GET https://qkapim34x.azure-api.net/product/api/home/getproducts
+Ocp-Apim-Subscription-Key:a1c914653d6a4e0280c782e9ba308d52
